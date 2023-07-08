@@ -36,3 +36,6 @@
 18. 容器文件拷贝到宿主机：docker cp 容器id:需要拷贝文件在容器中的路径 需要拷贝文件到宿主机的路径
 
 19. root远程登录查询命令  sshd -T |egrep 'protocol|permitrootlogin|permitemptypasswords|ciphers'
+
+20. postman.setEnvironmentVariable("环境变量名称",postman.getResponseHeader('需要存的字段名'));
+    eg: postman.setEnvironmentVariable("icsltoken_g01",postman.getResponseHeader('X-Subject-Token'));
